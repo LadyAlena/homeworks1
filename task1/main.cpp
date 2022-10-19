@@ -1,5 +1,7 @@
 #include <iostream>
+
 #include <vector>
+
 #include <algorithm>
 
 template<typename T>

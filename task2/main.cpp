@@ -1,8 +1,12 @@
 #include <iostream>
-#include <algorithm>
-#include <ctime>
+
 #include <vector>
 #include <variant>
+
+#include <algorithm>
+
+#include <ctime>
+
 
 template<typename T>
 void printContainer(const T& container) {
