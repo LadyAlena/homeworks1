@@ -40,6 +40,10 @@ std::variant<int, std::string, std::vector<int>> get_variant() {
 
 int main(int argc, char** argv) {
 
+#ifdef _WIN32
+	setlocale(LC_ALL, "ru");
+#endif
+
 	auto result_ = get_variant();
 
 	if (std::holds_alternative<int>(result_)) {

@@ -13,6 +13,10 @@ struct pi_CONST {
 
 int main(int argc, char** argv) {
 
+#ifdef _WIN32
+	setlocale(LC_ALL, "ru");
+#endif
+
 	std::vector<int> angles = { 30, 60, 90 };
 
 	std::string deg_to_rad_str = " * " + std::to_string(pi.rad) + " / " + std::to_string(pi.deg);
